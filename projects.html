@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects · Sihao.Liu</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .todo-demo { margin-top: 56px; }
+    .todo-demo .section-title { margin-bottom: 20px; }
+    .todo-iframe-wrap {
+      max-width: 560px;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      background: #fff;
+    }
+    .todo-iframe-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 740px;
+      border: none;
+    }
+    @media (max-width: 480px) {
+      .todo-iframe-wrap iframe { height: 680px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">Sihao.Liu</a>
+      <button class="nav-toggle" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>My Projects</h1>
+      <p>A few things I've built that I'm pretty proud of — take a look!</p>
+    </header>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-thumb">☕</div>
+        <div class="project-body">
+          <h3>Coffee Bean Diary</h3>
+          <p>A small app for logging your daily pour-over coffee recipes. Track water temperature, grind size, and flavor notes to help you find your perfect cup.</p>
+          <div class="links">
+            <a href="#" onclick="return false">Details</a>
+            <a href="#" onclick="return false">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">🗺️</div>
+        <div class="project-body">
+          <h3>City Wander Map</h3>
+          <p>A map app for marking the little corners of your city worth exploring — great shops, lovely views, friendly cats. Save your discoveries and share them with fellow wanderers.</p>
+          <div class="links">
+            <a href="#" onclick="return false">Details</a>
+            <a href="#" onclick="return false">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">📖</div>
+        <div class="project-body">
+          <h3>Reading Notes Hub</h3>
+          <p>A searchable notebook site for all the books I've read. Supports tag-based organization and excerpt export — so what you learn never fades away.</p>
+          <div class="links">
+            <a href="#" onclick="return false">Details</a>
+            <a href="#" onclick="return false">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">🎨</div>
+        <div class="project-body">
+          <h3>Palette Tool</h3>
+          <p>A color palette generator for when inspiration runs dry. One click for warm, comfortable schemes — exportable as CSS variables, a handy little helper for developers.</p>
+          <div class="links">
+            <a href="#" onclick="return false">Details</a>
+            <a href="#" onclick="return false">Source</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-thumb">✅</div>
+        <div class="project-body">
+          <h3>Projects To-Do</h3>
+          <p>A calendar-driven to-do list app with emoji tags, confetti on completion, and Supabase-backed cloud sync. Pick a date, add a task, check it off — your data persists across devices.</p>
+          <div class="links">
+            <a href="#todo-demo">Try it</a>
+            <a href="todo-app.html" target="_blank" rel="noopener">Open ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="todo-demo" id="todo-demo">
+      <h2 class="section-title">Live Demo · Projects To-Do</h2>
+      <div class="todo-iframe-wrap">
+        <iframe src="todo-app.html" title="Projects To-Do App" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="fun-fact">🐾 Fun fact: I can say "delicious" in 26 languages — but that's only so I never go hungry while traveling the world.</p>
+  </footer>
+</body>
+</html>
