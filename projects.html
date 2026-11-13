@@ -46,6 +46,26 @@
     @media (max-width: 480px) {
       .weather-iframe-wrap iframe { height: 640px; }
     }
+    .english-demo { margin-top: 56px; }
+    .english-demo .section-title { margin-bottom: 20px; }
+    .english-iframe-wrap {
+      max-width: 560px;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      background: #FFF0F5;
+    }
+    .english-iframe-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 720px;
+      border: none;
+    }
+    @media (max-width: 480px) {
+      .english-iframe-wrap iframe { height: 640px; }
+    }
   </style>
 </head>
 <body>
@@ -141,6 +161,18 @@
           </div>
         </div>
       </div>
+
+      <div class="project-card">
+        <div class="project-thumb">📚</div>
+        <div class="project-body">
+          <h3>Let's learning English</h3>
+          <p>A colorful picture quiz for little learners (ages 3–6). Three words, three pictures — tap what you see, get a ✗ for wrong and a ✓ for right, then celebrate with stars when you finish!</p>
+          <div class="links">
+            <a href="#english-demo">Try it</a>
+            <a href="english-app.html" target="_blank" rel="noopener">Open ↗</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <section class="todo-demo" id="todo-demo">
@@ -154,6 +186,13 @@
       <h2 class="section-title">Live Demo · Weather Now</h2>
       <div class="weather-iframe-wrap">
         <iframe src="weather-app.html" title="Weather Now App" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="english-demo" id="english-demo">
+      <h2 class="section-title">Live Demo · Let's learning English</h2>
+      <div class="english-iframe-wrap">
+        <iframe src="english-app.html" title="Let's learning English" loading="lazy"></iframe>
       </div>
     </section>
   </main>
